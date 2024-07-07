@@ -1,0 +1,79 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "nyt-karnakcondensed";
+  src: url("karnakcondensed-normal-700.woff2") format("woff2")
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: Arial;
+}
+
+.grid {
+  margin: 2em;
+  display: grid;
+  width: fit-content;
+  grid-template-columns: 5em 5em 5em;
+  grid-gap: .5em;
+}
+
+.grid-box {
+  height: 6em;
+  width: 6em;
+  border-radius: 1em;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+
+.letter {
+  font-size: 1.5em;
+  user-select: none;
+}
+
+.selected {
+  background-color: #787c7e;
+  color: white;
+}
+
+.correct {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.grid-box:active {
+  transform: scale(0.95);
+}
+
+h1 {
+  font-family: "nyt-karnakcondensed";
+  font-size: 37px;
+}
+
+.game-header {
+  width: 100%;
+  margin-bottom: 3em;
+  border-bottom: 1px solid lightgray;
+}
+
+.game-header-content {
+  width: 900px;
+  margin: auto;
+  padding-left: 3em;
+}
+
